@@ -1,6 +1,6 @@
 # 📝 Task Tracker CLI
 
-A lightweight and intuitive command‑line application to help you track and manage your day‑to‑day tasks made with **Spring Shell**
+A lightweight and intuitive command‑line application to help you track and manage your day‑to‑day tasks made with **Spring Shell**. This project is designed by [roadmap.sh](https://roadmap.sh/). You can find the project [here](https://roadmap.sh/projects/task-tracker).
 
 ## 🚀 Features
 
