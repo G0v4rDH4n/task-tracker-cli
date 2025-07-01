@@ -1,0 +1,18 @@
+#!/bin/bash
+# Wrapper script to run the Task Tracker CLI
+
+# Get the absolute path of this script
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Jar file path (update name if needed)
+JAR="$DIR/target/task-tracker-1.0.0.jar"
+
+# Check if jar exists
+if [[ ! -f "$JAR" ]]; then
+  echo "❌ task-tracker-cli.jar not found in the repo root."
+  echo "👉 Build the project or place the jar at the root and try again."
+  exit 1
+fi
+
+# Run the jar with any passed arguments
+java -jar "$JAR"
