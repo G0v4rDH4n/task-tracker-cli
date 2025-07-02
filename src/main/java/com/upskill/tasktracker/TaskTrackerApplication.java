@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TaskTrackerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TaskTrackerApplication.class, args);
+        SpringApplication app = new SpringApplication(TaskTrackerApplication.class);
+        app.setBanner(new CustomBannerConfig().customBanner());
+        app.run(args);
     }
 
 }
